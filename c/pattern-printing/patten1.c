@@ -8,10 +8,12 @@ ABCDEDCBA
 
  #include<stdio.h>
  void main()
-  {
+  {int n;
   char a= 'A';
-  for(int i=0;i<5;i++)
-  { 
+  printf("enter the number of rows:\n");
+  scanf("%d",&n);
+  for(int i=0;i<n;i++)
+  {
    for(int j=0;j<i;j++)
   {
    printf("%c",a+j);
@@ -19,8 +21,9 @@ ABCDEDCBA
    for(int k=i;k>=0;k--)
     { printf("%c",a+k);
    }
- 
-  
+
+
    printf("\n");}
-  
+
  }
+
